@@ -1,7 +1,7 @@
   <div id="modal-content">
     <h3 id="result">
     {% if user_name %}            
-      <p>Are you sure you want to <strong class="danger">reset all datapermanently?</strong>  All custom companies items will be lost and replaced with the generic test data!</p>
+      <p>Are you sure you want to <strong class="danger">reset all data permanently?</strong>  All custom companies items will be lost and replaced with the generic test data!</p>
       
     <form action = "{{url_for('reset_data', token=token)}}" method = "post">
       <input  class="button" type="submit" value="Yes, nuke it!">
