@@ -2,7 +2,7 @@
  resetting data to the default sample data '''
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from database_setup import Company, Base, SalesItem
+from app_db import Company, Base, SalesItem
 
 
 def load_default_data(session):
