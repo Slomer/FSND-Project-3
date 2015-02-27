@@ -10,7 +10,7 @@ This uses a modified version of the the Udacity support repo found [here](http:/
 ##Steps to run
 optional step: put your own github application key information into the config.py file and ensure http://localhost:8080 is your github application callback.  A temporary one is included already for testing purposes and at least at the time this is submitted it is an active key.
 
-1. Clone or Download the rep.
+1. Clone or Download the repo.
 2. run vagrant up from the vagrant subdirectory in the rep.  This assumes you have vagrant installed already.
 3. SSH into the virtual machine using Vagrant SSH
 4. From the vagrant/item-catalog subfolder, run "python flask_app.py".  The databases should be built for you if this is the first time it has been run but they will be empty.
