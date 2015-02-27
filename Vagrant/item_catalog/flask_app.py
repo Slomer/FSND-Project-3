@@ -441,7 +441,6 @@ def get_user_name():
                 user_name = str(github.get('user')['name'])
                 auth_db.add_user_name(this_id, user_name)
             session['username'] = user_name
-    print user_name
     return user_name
 
 
