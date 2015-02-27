@@ -20,6 +20,12 @@ optional step: put your own github application key information into the config.p
 8. The UI should be fairly straightforward.  Each company has an expandable menu item and once expanded it's items will show.  In a desktop environment you can hover over elements to get popup tips on edit functions but they should all work in a mobile or touch environment as well.
 9. If you log out, the edit elements will not show or function but the content should.
 
+note:  If you do not use the included Vagrant environment you will also need to install the following Python libraries:
+
+* bleach
+* github-flask
+* dicttoxml
+
 ##API endpoints
 JSON: http://localhost:8080/company/(company-id)/JSON
 XML: http://localhost:8080/company/(company-id)/XML
