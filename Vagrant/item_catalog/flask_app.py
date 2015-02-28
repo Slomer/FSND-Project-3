@@ -377,7 +377,6 @@ def authorized(oauth_token):
     if user is None:
         user = auth_db.User(oauth_token)
         auth_db.db_session.add(user)
-    user.github_access_token = oauth_token
 
     auth_db.db_session.commit()
     session['user_id'] = user.id
@@ -411,7 +410,10 @@ def username_json():
     this_id = session.get('user_id', None)
     if this_id is None:
         return jsonify({'username': "unknown"})
-    username = session.get('username', "")
+    else:
+        user_name = session.get('username', None)
+    if user_name is None:
+        user_name = get_user_name()
     return jsonify({'username': username})
 
 
